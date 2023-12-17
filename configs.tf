@@ -5,7 +5,8 @@ terraform {
       name = "AWS-Free-Tier-Terraform"
     }
   }
-  required_providers {
+  
+required_providers {
     aws = {
       source  = "hashicorp/aws"
       version = "5.4.0"
