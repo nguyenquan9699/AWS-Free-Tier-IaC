@@ -1,3 +1,3 @@
-output "aws_vpc_default" {
-  value = module.aws_vpc.aws_vpc_default_data
+output "ec2" {
+  value = module.custom_aws_ec2
 }
