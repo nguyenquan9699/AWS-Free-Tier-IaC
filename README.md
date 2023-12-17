@@ -13,16 +13,16 @@ TODO: some popular services
 - [ ] Amazon MQ
 - [ ] Amazon Elastic Container Registry
 - [ ] Amazon ElastiCache
-- [ ] AWS Amplify Hosting 
 - [ ] Amazon SES
 - [ ] AWS AppSync
+- [ ] AWS Amplify Hosting 
 - [ ] Amazon OpenSearch Service
 - [ ] AWS OpsWorks for Chef Automate
 - [ ] AWS OpsWorks for Puppet Enterprise
-- [ ] Amazon Cloud Directory
 
 ## Always Free
 
+- [ ] AWS Resource Explorer
 - [ ] Amazon DynamoDB
 - [ ] Amazon SimpleDB
 - [ ] AWS Lambda
@@ -40,11 +40,6 @@ TODO: some popular services
 - [ ] Amazon Cognito
 - [ ] Amazon SWF
 - [ ] AWS Key Management Service
-- [ ] AWS Glue
-- [ ] AWS License Manager
-- [ ] AWS Storage Gateway
-- [ ] AWS Well-Architected Tool
-- [ ] AWS CodeArtifact
 - [ ] Amazon Managed Service for Prometheus
 - [ ] Amazon EventBridge
 - [ ] Amazon Route 53
