@@ -5,11 +5,14 @@ terraform {
       name = "AWS-Free-Tier-Terraform"
     }
   }
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "5.4.0"
+    }
+  }
 }
 
 provider "aws" {
-  region = "ap-southeast-1"
-  alias = "singapore"
-  access_key = var.AWS_ACCESS_KEY
-  secret_key = var.AWS_ACCESS_KEY_SECRET
+  region     = "ap-southeast-1"
 }
