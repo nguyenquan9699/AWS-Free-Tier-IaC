@@ -4,21 +4,21 @@ TODO: some popular services
 ## 12 Months Free
 
 - [ ] Amazon EC2
+- [ ] Amazon Elastic Block Storage
 - [ ] Amazon S3
 - [ ] Amazon RDS
-- [ ] Amazon OpenSearch Service
 - [ ] Amazon API Gateway
+- [ ] Elastic Load Balancing
 - [ ] Amazon EFS
-- [ ] Amazon Elastic Block Storage
 - [ ] Amazon MQ
 - [ ] Amazon Elastic Container Registry
 - [ ] Amazon ElastiCache
 - [ ] AWS Amplify Hosting 
 - [ ] Amazon SES
+- [ ] AWS AppSync
+- [ ] Amazon OpenSearch Service
 - [ ] AWS OpsWorks for Chef Automate
 - [ ] AWS OpsWorks for Puppet Enterprise
-- [ ] Elastic Load Balancing
-- [ ] AWS AppSync
 - [ ] Amazon Cloud Directory
 
 ## Always Free
