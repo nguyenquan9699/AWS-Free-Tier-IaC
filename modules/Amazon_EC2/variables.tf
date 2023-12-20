@@ -1,10 +1,12 @@
 variable "ec2_ami" {
   type = string
-  default = "ami-05d1dd0175a5c3b99"
+  default = "ami-0fa377108253bf620"
+  description = "Default AMI for EC2 instance is Ubuntu 22.04 LTS"
 }
 variable "ec2_instance_type" {
   type = string
   default = "t2.micro"
+  description = "Default instance type is t2.micro"
 }
 variable "ec2_name" {
   type = string

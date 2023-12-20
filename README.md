@@ -1,9 +1,8 @@
 # AWS Free Tier Terraform
 
-TODO: some popular services
 ## 12 Months Free
 
-- [ ] Amazon EC2
+- [x] Amazon EC2
 - [ ] Amazon Elastic Block Storage
 - [ ] Amazon S3
 - [ ] Amazon RDS
