@@ -22,8 +22,7 @@
 ## Always Free
 
 - [ ] AWS Resource Explorer
-- [ ] Amazon DynamoDB
-- [ ] Amazon SimpleDB
+- [x] Amazon DynamoDB
 - [ ] AWS Lambda
 - [ ] Amazon SNS
 - [ ] Amazon SQS
