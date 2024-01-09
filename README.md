@@ -3,9 +3,9 @@
 ## 12 Months Free
 
 - [x] Amazon EC2
-- [ ] Amazon Elastic Block Storage
+- [x] Amazon Elastic Block Storage
 - [ ] Amazon S3
-- [ ] Amazon RDS
+- [x] Amazon RDS
 - [ ] Amazon API Gateway
 - [ ] Elastic Load Balancing
 - [ ] Amazon EFS
