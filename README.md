@@ -21,20 +21,19 @@
 
 ## Always Free
 
-- [ ] AWS Resource Explorer
 - [x] Amazon DynamoDB
+- [x] AWS CodeCommit
+- [x] AWS CodePipeline
+- [x] AWS CodeBuild
+- [x] AWS CodeArtifact
+- [x] AWS CodeDeploy
 - [ ] AWS Lambda
 - [ ] Amazon SNS
 - [ ] Amazon SQS
 - [ ] AWS Step Functions
 - [ ] Amazon CloudWatch
 - [ ] Amazon CloudFront
-- [ ] AWS CodeBuild
-- [ ] AWS CodeCommit
-- [ ] AWS CodePipeline
 - [ ] AWS X-Ray
-- [ ] AWS CodeArtifact
-- [ ] Amazon CodeCatalyst
 - [ ] Amazon Cognito
 - [ ] Amazon SWF
 - [ ] AWS Key Management Service
