@@ -46,7 +46,7 @@ variable "dynamoDB_key_attribute" {
 variable "dynamoDB_tag_key" {
   type = string
   default = "key"
-  description = "Default key is key"
+  description = "Default value is key"
 }
 
 variable "dynamoDB_tag_value" {
