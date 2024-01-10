@@ -1,7 +1,16 @@
 variable "dynamoDB_table_name" {
   type = string
-  default = "rds_db"
-  description = "Default value is rds_db"
+  default = "dynamoDB"
+  description = "Default value is dynamoDB"
+}
+
+variable "dynamoDB_billing_mode" {
+  type = string
+  default = "PROVISIONED"
+  validation {
+    condition = var.dynamoDB_billing_mode == "PROVISIONED" || var.dynamoDB_billing_mode == "PAY_PER_REQUEST"
+    error_message = "Not a valid billing mode"
+  }
 }
 
 variable "dynamoDB_key" {
@@ -22,12 +31,16 @@ variable "dynamoDB_max_write_capacity" {
   description = "Default DynamoDB max write capacity is 10"
 }
 
-variable "dynamoDB_attributes" {
+variable "dynamoDB_key_attribute" {
   type = object({
     name = string
     type = string
   })
-  description = "Attributes of DynamoDB table"
+  validation {
+    condition = var.dynamoDB_key_attribute.type == "S" || var.dynamoDB_key_attribute.type == "N" || var.dynamoDB_key_attribute.type == "B"
+    error_message = "Not a valid type"
+  }
+  description = "Attributes of DynamoDB table. S is String, N is Number, B is binary"
 }
 
 variable "dynamoDB_tag_key" {
