@@ -1,4 +1,4 @@
-resource "aws_dynamodb_table" "rds_instance" {
+resource "aws_dynamodb_table" "dynamodb_table" {
   name = var.dynamoDB_table_name
   hash_key = var.dynamoDB_key
   read_capacity = var.dynamoDB_max_read_capacity
