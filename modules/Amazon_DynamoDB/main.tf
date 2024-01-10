@@ -1,15 +1,14 @@
 resource "aws_dynamodb_table" "rds_instance" {
   name = var.dynamoDB_table_name
-  hash_key = var.dynamoDB_key
+  billing_mode = var.dynamoDB_billing_mode
+  
   read_capacity = var.dynamoDB_max_read_capacity
   write_capacity = var.dynamoDB_max_write_capacity
 
-  dynamic "attribute" {
-    for_each = var.dynamoDB_attributes
-    content {
-      name = attribute.value.name
-      type = attribute.value.type
-    }
+  hash_key = var.dynamoDB_key
+  attribute {
+    name = var.dynamoDB_key_attribute.name
+    type = var.dynamoDB_key_attribute.type
   }
 
   tags = {
@@ -19,7 +18,7 @@ resource "aws_dynamodb_table" "rds_instance" {
   lifecycle {
     create_before_destroy = true
     ignore_changes = [
-      read_capacity, write_capacity, replica
+      read_capacity, write_capacity
     ]
   }
   
