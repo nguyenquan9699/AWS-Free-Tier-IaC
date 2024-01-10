@@ -27,6 +27,7 @@
 - [x] AWS CodeBuild
 - [x] AWS CodeArtifact
 - [x] AWS CodeDeploy
+- [x] AWS Cloud9
 - [ ] AWS Lambda
 - [ ] Amazon SNS
 - [ ] Amazon SQS
