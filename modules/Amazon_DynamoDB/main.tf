@@ -1,7 +1,7 @@
 resource "aws_dynamodb_table" "dynamodb_table" {
-  name = var.dynamoDB_table_name
-  hash_key = var.dynamoDB_key
-  read_capacity = var.dynamoDB_max_read_capacity
+  name           = var.dynamoDB_table_name
+  hash_key       = var.dynamoDB_key
+  read_capacity  = var.dynamoDB_max_read_capacity
   write_capacity = var.dynamoDB_max_write_capacity
 
   dynamic "attribute" {
@@ -22,5 +22,5 @@ resource "aws_dynamodb_table" "dynamodb_table" {
       read_capacity, write_capacity, replica
     ]
   }
-  
+
 }

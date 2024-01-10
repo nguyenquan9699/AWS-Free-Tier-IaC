@@ -1,9 +1,9 @@
 data "aws_vpc" "aws_vpc_default" {
-    default = true
+  default = true
 }
 
 data "aws_subnets" "aws_subnets_default" {
-  
+
 }
 
 resource "aws_security_group" "allow_ssh" {
@@ -26,7 +26,7 @@ resource "aws_security_group" "allow_ssh" {
 resource "aws_security_group" "allow_http" {
   name        = "allow-http"
   description = "Allow HTTP access"
-  
+
   ingress {
     from_port   = 80
     to_port     = 80
@@ -43,7 +43,7 @@ resource "aws_security_group" "allow_http" {
 resource "aws_security_group" "allow_https" {
   name        = "allow-https"
   description = "Allow HTTPS access"
-  
+
   ingress {
     from_port   = 443
     to_port     = 443
@@ -59,7 +59,7 @@ resource "aws_security_group" "allow_https" {
 }
 
 resource "aws_network_acl" "custom_aws_network_acl" {
-  vpc_id = data.aws_vpc.aws_vpc_default.id
+  vpc_id     = data.aws_vpc.aws_vpc_default.id
   subnet_ids = data.aws_subnets.aws_subnets_default.ids
   egress {
     protocol   = "-1"
