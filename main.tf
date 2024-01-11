@@ -1,4 +1,4 @@
-module "test_module_cloud9" {
-  source = "./modules/Amazon_Cloud9"
-  
+module "test_codecommit" {
+  source = "./modules/Amazon_CodeCommit"
+  codecommit_repository_name = "test_codecommit"
 }
